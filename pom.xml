@@ -58,6 +58,12 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jackson-databind.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.2.0</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
@@ -79,7 +85,7 @@
 
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/*Tests*.java</include>
+                        <include>**/*Test*.java</include>
                     </includes>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
